@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        
+        .center-text {
+            text-align: center;
+        }
+
+        
+        .booking-heading {
+            margin-bottom: 20px; 
+        }
+    </style>
+    <link rel="stylesheet" href="./stylesreg.css" />
+</head>
+<body>
+
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<h1>Registration Form</h1>
+<p>Please register all the details</p>
+
+    <form action="./reg_insert.php" method="post">
+        <div class="user-reg">
+        
+        <fieldset>
+            <label >Enter Your First Name: <input id="first_name" name="first_name" type="text" required/></label>
+            <label >Enter Your Last Name: <input id="last_name" name ="last_name" type="text" required/></label>
+            
+             <label >Enter Your Phone Number: <input id="phone" name="phone" type="tel" required/></label>
+            <label >Enter Your Email: <input id="regemail" name="regemail" type="email" required/></label>
+            <label >Create a New Password: <input id="new_password" name="new_password" type="password"
+                                                                    pattern="[a-z0-9]{8,}" required/></label>
+            
+            
+            <label >Confirm Password: <input id="confirm_password" name="confirm_password" type="password"
+                                                                    pattern="[a-z0-9]{8,}" required/></label>
+            
+            
+            <label >Enter Your Address: <input id="addres" name="addres" type="text" required/></label> 
+             
+            
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </div>
+    </form>
+
+</body>
+</html>

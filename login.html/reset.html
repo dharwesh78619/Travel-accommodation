@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .password-reset-form {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px; /* Increased padding for more space */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0; /* Added margin for spacing */
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #ca3435;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgba(202, 52, 53, 0.9);
+        }
+    </style>
+</head>
+<body>
+<div class="password-reset-form">
+    <h1>Reset Password</h1>
+    <form method="POST" action="./reset.php"> <!-- Specify the PHP script to handle form submission -->
+        <input type="email" name="email" placeholder="Email Address" required>
+        <br> <!-- Added line break for spacing -->
+        <input type="password" name="new_password" placeholder="New Password" required>
+        <br> <!-- Added line break for spacing -->
+        <input type="submit" value="Reset Password">
+    </form>
+</div>
+</body>
+</html>

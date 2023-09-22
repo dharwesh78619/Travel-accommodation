@@ -1,0 +1,169 @@
+/* Style the navigation bar */
+header {
+  background-color: #333; /* Background color of the navigation bar */
+  color: #fff; /* Text color of the navigation links */
+  padding: 10px 0; /* Add some padding for spacing */
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points from the list */
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #fff; /* Text color of the links */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url('../Assets/wallpaperflare.com_wallpaper.jpg'); /* Replace 'your-image-url.jpg' with the URL of your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+   
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+
+
+  
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  /* Add a bold border to the registration form */
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2em;
+   
+}
+
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  /* Bold the "I accept the terms and conditions" text */
+/* Add a border and change the background color inside the border to black */
+label[for="terms-and-conditions"] {
+  border: 2px solid #000; /* Add a 2px solid black border */
+  padding: 10px; /* Add padding to create space inside the border */
+  display: inline-block; /* Make the label a block-level element to contain the background color */
+  background-color: #000; /* Set the background color to black */
+  color: #fff; /* Change text color to white for better visibility on black background */
+}
+/* Your existing CSS styles... */
+
+/* Center-align the "BOOKING INFORMATION" heading */
+/* Center-align the "BOOKING INFORMATION" heading and move it upwards */
+.booking-heading {
+  text-align: center;
+  margin: -20px 0 20px; /* Adjust the top and bottom margin values as needed */
+}
+
+/* Your existing CSS styles... */
+
+/* Your existing CSS styles... */
+
+
+
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  
+  /* Additional CSS for <h2> element and profile picture label */
+  h2 {
+    margin-top: -10px; /* Adjust the value to move it upwards */
+  }
+  
+  /* Add space between the h2 and profile picture label */
+  label[for="profile-picture"] {
+    margin-top: 20px; /* Adjust the value to control the space */
+  }
+  
+  /* Add space between labels after "BOOKING INFORMATION" */
+  fieldset:nth-child(3) label {
+    margin-bottom: 10px; /* Adjust the value to control the space */
+  }
+  
+  /* Add more space between specific labels */
+  label[for="profile-picture"],
+  label[for="age"],
+  label[for="referrer"],
+  label[for="check-in-date"],
+  label[for="check-out-date"],
+  label[for="room-type"],
+  label[for="smoking"],
+  label[for="guests"] {
+    margin-bottom: 20px; /* Adjust the value to control the space */
+  }
+  
+
+  .user-reg {
+    backdrop-filter: blur(3px) saturate(180%);
+    -webkit-backdrop-filter: blur(3px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.43);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    margin: 10px; /* Adjust the margin as needed to provide space around the container */
+    padding: 20px; /* Add padding inside the container for spacing */
+  }
+  .user-reg label {
+    margin-bottom: 20px; /* Increase this value as needed for more space between labels */
+  }

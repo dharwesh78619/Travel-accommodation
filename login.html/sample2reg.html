@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./stylesreg.css" />
+
+    <!-- Include meta charset, title, styles, and CSS link here if needed -->
+</head>
+<body>
+<form method="post" action="https://register-demo.freecodecamp.org">
+    <fieldset>
+        <div class="center-text"> <!-- Center-align the heading -->
+            <h2 class="booking-heading">BOOKING INFORMATION</h2> <!-- New Heading with added class -->
+        </div>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120"/></label>
+        <label for="referrer">GENDER
+            <select id="referrer" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+            </select>
+        </label>
+
+        <!-- New Fields -->
+        <label for="check-in-date">Check-In Date: <input id="check-in-date" type="date" name="check-in-date"
+                                                        required/></label>
+        <label for="check-out-date">Check-Out Date: <input id="check-out-date" type="date" name="check-out-date"
+                                                           required/></label>
+        <!-- Changed "Room Type" to a Select Field -->
+        <label for="room-type">Room Type:
+            <select id="room-type" name="room-type" required>
+                <option value="standard">Standard</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="suite">Suite</option>
+            </select>
+        </label>
+        <!-- Changed "Smoking" to a Select Field -->
+        <label for="smoking">Smoking:
+            <select id="smoking" name="smoking" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </label>
+        <label for="guests">Number of Guests: <input id="guests" type="number" name="guests" required/></label>
+    </fieldset>
+    <fieldset>
+        <label for="terms-and-conditions">
+            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline"/> I
+            accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+    </fieldset>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
