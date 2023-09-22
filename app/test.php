@@ -1,0 +1,93 @@
+<?php include './template/_head.php';
+?>
+<body>
+    <div class="container">
+        <!-- Filter Form -->
+        <form id="filterForm">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Check-In Date">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Check-Out Date">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Room type">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Location">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Price Range">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Rooms/Number of persons" id="bookingTrigger">
+                </div>
+            </div>
+        </form>
+
+        <!-- Booking Form (modal) -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Booking Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="roomCount">Number of Rooms</label>
+                                <input type="text" class="form-control" id="roomCount" placeholder="Enter number of rooms">
+                            </div>
+                            <div class="form-group">
+                                <label for="adultCount">Number of Adults</label>
+                                <input type="text" class="form-control" id="adultCount" placeholder="Enter number of adults">
+                            </div>
+                            <div class="form-group">
+                                <label for="childCount">Number of Children</label>
+                                <input type="text" class="form-control" id="childCount" placeholder="Enter number of children">
+                            </div>
+                            <!-- Add more booking form fields as needed -->
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // JavaScript code to show the booking modal and capture room/adult/child counts
+        document.addEventListener('DOMContentLoaded', function() {
+            var bookingTrigger = document.getElementById('bookingTrigger');
+            var roomCountInput = document.getElementById('roomCount');
+            var adultCountInput = document.getElementById('adultCount');
+            var childCountInput = document.getElementById('childCount');
+
+            bookingTrigger.addEventListener('click', function() {
+                // Show the booking modal when the input field is clicked
+                $('#exampleModalCenter').modal('show');
+            });
+
+            // Capture room, adult, and child counts when the modal is closed
+            $('#exampleModalCenter').on('hidden.bs.modal', function () {
+                roomCountInput.value = ''; // Reset values
+                adultCountInput.value = '';
+                childCountInput.value = '';
+            });
+        });
+    </script>
+    <!-- Include Bootstrap CSS and JavaScript links here -->
+</body>
+</html>
