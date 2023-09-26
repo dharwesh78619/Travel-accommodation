@@ -7,7 +7,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="bd-placeholder-img" width="100%" height="100%" src="../Assets/a1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="10%" height="10%" fill="var(--bs-secondary-color)"/></svg>
+        <img class="bd-placeholder-img" width="100%" height="100%" src="../../Assets/a1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="10%" height="10%" fill="var(--bs-secondary-color)"/></svg>
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Example headline.</h1>

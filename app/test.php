@@ -61,11 +61,6 @@
             </div>
         </div>
     </div>
-<!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Include Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
         // JavaScript code to show the booking modal and capture room/adult/child counts
@@ -88,6 +83,5 @@
             });
         });
     </script>
-    <!-- Include Bootstrap CSS and JavaScript links here -->
 </body>
 </html>
